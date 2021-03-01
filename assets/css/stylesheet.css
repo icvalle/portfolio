@@ -33,8 +33,12 @@
   }
   /* End of Reset */
 
+body {
+  position: relative;
+}
+
 header {
-    background: #4f5353;
+    background: rgba(127, 129, 129, .5);
     display: block;
     overflow: visible;
     position: relative;
@@ -51,6 +55,7 @@ img.ivlogo {
     top: .35em;
     width: 26px;
     height: auto;
+    opacity: 1;
 }
 
 nav {
@@ -58,6 +63,7 @@ nav {
     margin: 1em;
     position: absolute;
     right: 1em;
+    opacity: 1;
 }
 
 nav a {
@@ -72,11 +78,105 @@ nav a:hover {
 
 }
 
-.aboutMe {
-
+.introbg {
+    background: url('../images/intro_hero_img.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(172, 232, 234, .75);
+    background-blend-mode:soft-light;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: -1;
 }
 
-.workSamples {
-    
+.introbg .introtext {
+    float: left;
+    width: 90%;
+    height: 200px;
+    padding: 1em;
+    position: absolute;
+    left: 6em;
+    margin: auto;
+    overflow: visible;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 1em;
+}
+
+h3 {
+  font-size: 2.25em;
+  line-height: 1.15em;
+}
+
+h4 {
+  font-size: 1.75em;
+  line-height: 1.15em;
+}
+
+h5 {
+  color: #babdbd;
+  font-size: 1.25em;
+  line-height: 1.35em;
+  margin: 0 0 .25em;
+}
+
+section {
+    position: relative;
+    top: -50px;
+    padding: 0 2em;
+}
+
+#aboutMe {
+    border-left: 5px solid #ACE8EA;
+    margin: 2em auto;
+    max-width: 800px;
+}
+
+#workSamples {
+    max-width: 1000px;
+}
+
+footer {
+    background-color: #f2f3f3;
+    width: 100%;
+    padding: 1.5em 2em;
+    position: absolute;
+    bottom: 0;
+}
+
+#contactInfo ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+#contactInfo li {
+    display: inline;
+    margin-right: 1em;
+}
+
+#contactInfo ul li a {
+    color:#7f8181;
+    text-decoration: none;
+
+}
+#contactInfo ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #ACE8EA;
 }
 
