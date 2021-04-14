@@ -15,6 +15,25 @@
     line-height: 1;
     font-family: sans-serif;
   }
+
+  .modal-dialog {
+    max-width: 800px;
+    margin: 2em auto;
+  }
+
+  .modal-content {
+    background-color: #FFF;
+    border: none;
+  }
+
+  .modal-header {
+    padding: 1em 0 .25em 1em;
+    border-bottom: none;
+  }
+
+  .modal-header .close {
+    margin: -1em 0 0 -2em;
+  }
   
   h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
@@ -133,6 +152,12 @@ h1 {
   line-height: 1em;
 }
 
+h3 {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+}
+
 h4 {
   font-size: 1.75em;
   line-height: 1.15em;
@@ -181,22 +206,25 @@ figure {
   flex: 1 1 300px;
   background-color: var(--aquaColor);
   height: 200px;
-  margin: .25em;
+  margin: .1em;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-blend-mode: normal; 
 }
 
-figure a img {
-  height: 100%;
-  opacity: .8;
-}
-
-figure a:hover img {
-  opacity: .25;
+figure:hover {
+  background-blend-mode: overlay;
+  cursor: pointer;
+  opacity: .65;
 }
 
 figure h6 {
-  background-color: rgba(172, 232, 234, .5);
+  background-color: rgba(255, 255, 255, 0.65);
+  color: #7f8181;
   padding: .25em 1em .4em .75em;
   position: absolute;
   top: 0;
@@ -204,8 +232,14 @@ figure h6 {
   margin: 1em 1em 1em 0;
 }
 
-figure a:hover h6 {
-  background-color: rgba(255, 255, 255, 0.65);
+figure:hover h6 {
+  background-color: #FFF;
+  color: #000;
+  cursor: pointer;
+}
+
+#weatherFig {
+  background-image: url("../images/weather_dashboard.jpg");
 }
 
 /* This work sample will be 3x bigger than all the others */
@@ -217,19 +251,42 @@ figure a:hover h6 {
 footer {
   background-color: #f2f3f3;
   width: 100%;
-  padding: 1.5em 2em;
+  padding: 1.5em 2em 2em;
   position: relative;
   margin: 2em auto 0;
 }
 
-footer ul {
+#direct {
+  float: left;
+  list-style-type: none;
+  text-align: left;
+}
+
+footer #direct li {
+  margin-bottom: .35em;
+  margin-left: 1em;
+}
+
+#social {
   list-style-type: none;
   text-align: right;
 }
 
-footer li {
+ul #social li {
+  display: inline;
+}
+
+.contact {
+  color: #a6a9a9;
+}
+
+footer #social li {
   display: inline;
   margin-right: 1em;
+}
+
+#direct li a {
+  color:#000;
 }
 
 footer ul li a {
@@ -243,9 +300,9 @@ footer ul li a:hover {
   text-decoration-color: var(--aquaColor);
 }
 
-/* When the screen is below 768px the work samples will stack and take up full width */
-@media screen and (max-width: 768) {
-    #workSamples {
-      flex-direction: column;
-    }
+@media only screen and (max-width: 768px) {
+  footer #social li {
+    display: block;
+    margin-bottom: .5em;
+  }
 }

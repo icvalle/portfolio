@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iris Valle's Portfolio</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" type="text/css">
     <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+    <div class="modal fade" id="musicMash" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLongTitle">Music Mashup</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+                <img src="assets/images/weather_dashboard.jpg" width="100%" height="auto" alt="">
+            <div class="modal-body">
+                <p>Deployed Version: <a href="https://icvalle.github.io/" target="_blank">icvalle.github.io/</a></p>
+                <p>GitHub Repository: <a href="https://github.com/icvalle/" target="_blank">https://github.com/icvalle/</a></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="weatherDash" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLongTitle">Weather Dashboard</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+                <img src="assets/images/weather_dashboard.jpg" width="100%" height="auto" alt="">
+            <div class="modal-body">
+                <p>Deployed Version: <a href="https://icvalle.github.io/weather-dashboard/" target="_blank">icvalle.github.io/weather-dashboard/</a></p>
+                <p>GitHub Repository: <a href="https://github.com/icvalle/weather-dashboard" target="_blank">https://github.com/icvalle/weather-dashboard</a></p>
+            </div>
+            </div>
+        </div>
+    </div>
 
 <header>
         <img src="assets/images/ivlogo.png" class="ivlogo" alt="logo">
@@ -35,17 +75,14 @@
 
     <section id="workSamples">
         <figure class="spotlight">
-            <a href="https://icvalle.github.io/code_refactor/" target="_blank">
+            <a href="https://icvalle.github.io/code_refactor/" target="_blank" data-toggle="modal" data-target="#musicMash">
                 <img src="assets/images/spotlight_work_sample.jpg" alt="Project Spotlight">
-                <h6>Spotlight Project Name</h6>
+                <h6>Music Mashup</h6>
             </a>
         </figure>
 
-        <figure>
-            <a href="#" target="_blank"> 
-                <img src="assets/images/project.jpg" alt="Project 1">
-                <h6>Project 1 Name</h6> 
-            </a>
+        <figure id="weatherFig" data-toggle="modal" data-target="#weatherDash">
+                <h6>Weather Dashboard</h6>
         </figure>
 
         <figure>
@@ -81,12 +118,18 @@
 </main>
 
 <footer id="contactInfo">
-    <ul>
+    <ul id="direct">
+        <li><span class="contact">Call &rang;</span>&nbsp; 443 &#8226; 351 &#8226; 7843</li>
+        <li><span class="contact">Email &rang;</span>&nbsp; <a href="mailto:valle.web.design@gmail.com">valle.web.design@gmail.com</a></li>
+    </ul>
+    <ul id="social">
+        <li><a href="assets/files/iv_resume.pdf" target="_blank">Resume</a></li>
         <li><a href="https://www.linkedin.com/in/valleiris" target="_blank">LinkedIn</a></li>
         <li><a href="https://github.com/icvalle" target="_blank">GitHub</a></li>
     </ul>
 </footer>
 
-    
+<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
