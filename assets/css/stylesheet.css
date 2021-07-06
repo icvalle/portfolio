@@ -242,7 +242,7 @@ figure:hover h6 {
 #spotlight {
   flex: 3 1 auto;
   width: 90%;
-  background-image: url("../images/music_mashup.jpg");
+  background-image: url("../images/movies.png");
 }
 
 #weatherFig {
@@ -251,6 +251,10 @@ figure:hover h6 {
 
 #schedulerFig {
   background-image: url("../images/work_day_scheduler.jpg");
+}
+
+#musicFig {
+  background-image: url("../images/music_mashup.jpg");
 }
 
 .workSamples {
