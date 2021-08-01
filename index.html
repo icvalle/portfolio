@@ -87,6 +87,44 @@
         </div>
     </div>
 
+    <div class="modal fade" id="budgetTracker" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Budget Tracker</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+                <img src="assets/images/budgetTracker.jpg" width="100%" height="auto" alt="">
+            <div class="modal-body">
+                <p>Deployed Version: <a href="https://damp-sands-25430.herokuapp.com/" target="_blank">https://damp-sands-25430.herokuapp.com/</a></p>
+                <p>GitHub Repository: <a href="https://github.com/icvalle/progressive-budget" target="_blank">https://github.com/icvalle/progressive-budget</a></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="noteTaker" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Note Taker</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+                <img src="assets/images/noteTaker.jpg" width="100%" height="auto" alt="">
+            <div class="modal-body">
+                <p>Deployed Version: <a href="https://evening-ravine-45003.herokuapp.com/" target="_blank">https://evening-ravine-45003.herokuapp.com/</a></p>
+                <p>GitHub Repository: <a href="https://github.com/icvalle/note-taker" target="_blank">https://github.com/icvalle/note-taker</a></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="sample" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -109,10 +147,17 @@
 <header>
         <img src="assets/images/ivlogo.png" class="ivlogo" alt="logo">
         <p>Iris Valle</p>
-    <nav>
-        <a href="#aboutMe">About</a>
-        <a href="#workSamples">Work</a>
-        <a href="#contactInfo">Contact Me</a>
+    <nav class="navbar-expand-sm navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a href="#aboutMe">About</a>
+                <a href="#workSamples">Portfolio</a>
+                <a href="#footerInfo">Contact</a>
+            </div>
+        </div>
     </nav>
 </header>
 
@@ -123,15 +168,15 @@
             I&rsquo;m Iris.</h1>
             <h4>Nice to meet you.</h4>
         </div>
+        <img src="assets/images/portfolio_photo_iris.png" alt="Photo" id="irisPhoto">
     </div>
 
     <section id="aboutMe">
         <h5>About Me</h5>
-        <p>Hello, I’m Iris, a web designer based in Maryland. I&rsquo;m currently working toward a full stack web development certificate to broaden my skill set. Below are some samples of my work from the coding program.</p>
+        <p>I’m a web designer based in Maryland. I&rsquo;m currently working toward a full stack web development certificate to broaden my skill set. Below are some samples of my work from the coding program.</p>
     </section>
 
     <section id="workSamples">
-
         <figure id="spotlight" data-toggle="modal" data-target="#moviesBooking">
                 <h6>Movies Booking App</h6>
         </figure>
@@ -148,19 +193,18 @@
                 <h6>Music Mashup</h6> 
         </figure>
 
-        <figure class="workSamples" data-toggle="modal" data-target="#sample">
-                <h6>Project 4 Name</h6> 
+        <figure id="budgetFig" data-toggle="modal" data-target="#budgetTracker">
+                <h6>Budget Tracker</h6> 
         </figure>
 
-        <figure class="workSamples" data-toggle="modal" data-target="#sample">
-                <h6>Project 5 Name</h6> 
+        <figure id="noteFig" data-toggle="modal" data-target="#noteTaker">
+                <h6>Note Taker</h6> 
         </figure>
-
     </section>
 
 </main>
 
-<footer id="contactInfo">
+<footer id="footerInfo">
     <ul id="direct">
         <li><span class="contact">Call &rang;</span>&nbsp; 443 &#8226; 351 &#8226; 7843</li>
         <li><span class="contact">Email &rang;</span>&nbsp; <a href="mailto:valle.web.design@gmail.com">valle.web.design@gmail.com</a></li>
